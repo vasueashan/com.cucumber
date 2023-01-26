@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-26T13:54:20Z" name="Suite" finished-at="2023-01-26T13:54:45Z" duration-ms="25155">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner2@1e44b638]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-01-26T13:54:20Z" name="Test" finished-at="2023-01-26T13:54:45Z" duration-ms="25155">
+      <class name="com.testautomation.TestRunner.TestRunner2">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner2@1e44b638]" started-at="2023-01-26T13:54:20Z" name="setUpClass" finished-at="2023-01-26T13:54:20Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner2@1e44b638]" started-at="2023-01-26T13:54:20Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-26T13:54:41Z" duration-ms="20329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login valid username and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["searchdata validation search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testautomation.TestRunner.TestRunner2@1e44b638]" started-at="2023-01-26T13:54:41Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-26T13:54:45Z" duration-ms="4285" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login invalid username and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["searchdata validation search"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [vasu] but found [HRMS-Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [vasu] but found [HRMS-Login]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.testautomation.Stepdef.loginPage.verify_page_title(loginPage.java:36)
+at ✽.verify page title(./features/logInPage.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testautomation.TestRunner.TestRunner2@1e44b638]" started-at="2023-01-26T13:54:45Z" name="tearDownClass" finished-at="2023-01-26T13:54:45Z" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testautomation.TestRunner.TestRunner2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
