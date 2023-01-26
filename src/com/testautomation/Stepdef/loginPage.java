@@ -33,7 +33,7 @@ public class loginPage implements baseMethods {
 	@When("verify page title")
 	public void verify_page_title() {
 		HookClass.CurrentMethodname = Thread.currentThread().getStackTrace()[1].getMethodName();
-	    Assert.assertEquals(HookClass.driver.getTitle(), "vasu");
+	    Assert.assertEquals(HookClass.driver.getTitle(), "HRMS-Login");
 	    
 	}
 
